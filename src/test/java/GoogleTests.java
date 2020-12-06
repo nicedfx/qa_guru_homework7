@@ -17,5 +17,7 @@ public class GoogleTests {
 
         // Проверить, что Selenide появился в результатах поиска
         $("html").shouldHave(Condition.text("selenide.org"));
+        //Wouldn't it be more correct to introduce a more precise locator to check the search results?
+        $("#rcnt").shouldHave(Condition.text("selenide.org"));        
     }
 }
